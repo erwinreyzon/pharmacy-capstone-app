@@ -3,3 +3,14 @@ GET http://localhost:3000/drugs.json
 
 ### Drug Show
 GET http://localhost:3000/drugs/1.json
+
+### Drug Show
+POST http://localhost:3000/drugs.json
+Content-Type: application/json
+
+{
+  "name": "create name test",
+  "description": "create description test",
+  "class_id": "create class_id test",
+  "image_url": "create image_url test"
+}
