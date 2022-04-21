@@ -4,7 +4,7 @@ GET http://localhost:3000/drugs.json
 ### Drug Show
 GET http://localhost:3000/drugs/1.json
 
-### Drug Show
+### Drug Post
 POST http://localhost:3000/drugs.json
 Content-Type: application/json
 
@@ -13,4 +13,12 @@ Content-Type: application/json
   "description": "create description test",
   "class_id": "create class_id test",
   "image_url": "create image_url test"
+}
+
+### Drug Patch
+PATCH http://localhost:3000/drugs/3.json
+Content-Type: application/json
+
+{
+  "class_id": 1
 }

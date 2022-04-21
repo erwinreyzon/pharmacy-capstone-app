@@ -24,4 +24,17 @@ class DrugsController < ApplicationController
     end
   end
 
+  def update
+    drug = Drug.find_by(id: params[:id])
+    drug.name = params["name"] || drug.name
+    drug.description = params["description"] || drug.description
+    drug.class_id = params["class_id"] || drug.class_id
+    drug.image_url = params["image_url"] || drug.image_url
+    if drug.save
+      render json: drug
+    else
+      render json: {error: drug.error.full_messages}, status: 422
+    end
+  end
+
 end
