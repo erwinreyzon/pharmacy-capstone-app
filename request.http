@@ -22,3 +22,6 @@ Content-Type: application/json
 {
   "class_id": 1
 }
+
+### Drug Delete
+DELETE http://localhost:3000/drugs/3.json

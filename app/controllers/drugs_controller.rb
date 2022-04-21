@@ -37,4 +37,10 @@ class DrugsController < ApplicationController
     end
   end
 
+  def destroy
+    drug = Drug.find_by(id: params[:id])
+    drug.destroy
+    render json: {message: "Drug Destroyed"}
+  end
+
 end
