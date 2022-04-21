@@ -1,0 +1,5 @@
+### Drug Index
+GET http://localhost:3000/drugs.json
+
+### Drug Show
+GET http://localhost:3000/drugs/1.json
