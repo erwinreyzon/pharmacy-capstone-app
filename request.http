@@ -25,3 +25,17 @@ Content-Type: application/json
 
 ### Drug Delete
 DELETE http://localhost:3000/drugs/3.json
+
+### Classification Index
+GET http://localhost:3000/classifications.json
+
+### Classification Show
+GET http://localhost:3000/classifications/1.json
+
+### Classification Post
+POST http://localhost:3000/classifications
+Content-Type: application/json
+
+{
+  "name": "Anti-Depressant"
+}

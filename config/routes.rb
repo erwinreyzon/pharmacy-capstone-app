@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   # Classification actions
   get "/classifications" => "classifications#index"
   get "/classifications/:id" => "classifications#show"
+  post "/classifications" => "classifications#create"
 
 end

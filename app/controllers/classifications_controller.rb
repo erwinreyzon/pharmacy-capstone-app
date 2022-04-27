@@ -10,4 +10,15 @@ class ClassificationsController < ApplicationController
     render json: classification
   end
 
+  def create
+    classification = Classification.new(
+      name: params["name"]
+    )
+    if classification.save
+      render json: classification
+    else
+      render json: {error: drug.error.full_messages}, status: 422
+    end
+  end
+
 end
