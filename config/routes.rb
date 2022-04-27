@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   get "/classifications" => "classifications#index"
   get "/classifications/:id" => "classifications#show"
   post "/classifications" => "classifications#create"
+  patch "/classifications/:id" => "classifications#update"
 
 end
