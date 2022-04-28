@@ -1,8 +1,8 @@
 class DrugsController < ApplicationController
 
   def index
-    drugs = Drug.all
-    render json: drugs
+    @drugs = Drug.all
+    render :index
   end
 
   def show
