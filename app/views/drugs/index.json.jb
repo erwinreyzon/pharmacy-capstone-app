@@ -1,0 +1,6 @@
+@drugs.map do |drug|
+  {
+    id: drug.id,
+    url: drug_url(drug, format: :json)
+  }
+end
