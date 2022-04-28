@@ -6,8 +6,8 @@ class DrugsController < ApplicationController
   end
 
   def show
-    drug = Drug.find_by(id: params[:id])
-    render json: drug
+    @drug = Drug.find_by(id: params[:id])
+    render :show
   end
 
   def create

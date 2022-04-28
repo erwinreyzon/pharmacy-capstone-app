@@ -1,5 +1,9 @@
 {
   id: @drug.id,
+  name: @drug.name,
+  description: @drug.description,
+  class_id: @drug.class_id,
+  image_url: @drug.image_url,
   created_at: @drug.created_at,
   updated_at: @drug.updated_at
 }
