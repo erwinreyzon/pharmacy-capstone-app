@@ -11,13 +11,13 @@ class ClassificationsController < ApplicationController
   end
 
   def create
-    classification = Classification.new(
+    @classification = Classification.new(
       name: params["name"]
     )
-    if classification.save
-      render json: classification
+    if @classification.save
+      render :show
     else
-      render json: {error: drug.error.full_messages}, status: 422
+      render json: {error: @drug.errors.full_messages}, status: 422
     end
   end
 
@@ -27,7 +27,7 @@ class ClassificationsController < ApplicationController
     if classification.save
       render json: classification
     else
-      render json: {error: drug.error.full_messages}, status: 422
+      render json: {error: drug.errors.full_messages}, status: 422
     end
   end
 

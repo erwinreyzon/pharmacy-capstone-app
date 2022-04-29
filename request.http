@@ -40,11 +40,11 @@ GET http://localhost:3000/classifications.json
 GET http://localhost:3000/classifications/1.json
 
 ### Classification Post
-POST http://localhost:3000/classifications
+POST http://localhost:3000/classifications.json
 Content-Type: application/json
 
 {
-  "name": "Anti-Depressant"
+  "name": "js test"
 }
 
 ### Classification Patch
