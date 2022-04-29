@@ -1,8 +1,8 @@
 class ClassificationsController < ApplicationController
 
   def index
-    classifications = Classification.all
-    render json: classifications
+    @classifications = Classification.all
+    render :index
   end
 
   def show
