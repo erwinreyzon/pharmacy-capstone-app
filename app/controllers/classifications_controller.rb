@@ -22,10 +22,10 @@ class ClassificationsController < ApplicationController
   end
 
   def update
-    classification = Classification.find_by(id: params[:id])
-    classification.name = params["name"] || classification.name
-    if classification.save
-      render json: classification
+    @classification = Classification.find_by(id: params[:id])
+    @classification.name = params["name"] || @classification.name
+    if @classification.save
+      render :show
     else
       render json: {error: drug.errors.full_messages}, status: 422
     end
