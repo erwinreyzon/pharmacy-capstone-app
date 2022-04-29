@@ -13,7 +13,8 @@ Rails.application.routes.draw do
   post "/classifications" => "classifications#create"
   patch "/classifications/:id" => "classifications#update"
 
-  ### User CREATE
+  ### User CREATE and sessions CREATE
   post "/users" => "users#create"
+  post "/sessions" => "sessions#create"
 
 end
