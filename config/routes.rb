@@ -13,4 +13,7 @@ Rails.application.routes.draw do
   post "/classifications" => "classifications#create"
   patch "/classifications/:id" => "classifications#update"
 
+  ### User CREATE
+  post "/users" => "users#create"
+
 end
