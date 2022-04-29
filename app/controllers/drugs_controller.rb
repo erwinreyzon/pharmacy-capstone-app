@@ -28,7 +28,7 @@ class DrugsController < ApplicationController
     @drug = Drug.find_by(id: params[:id])
     @drug.name = params["name"] || @drug.name
     @drug.description = params["description"] || @drug.description
-    @drug.class_id = params["class_id"] || @drug.class_id
+    @drug.classification_id = params["classification_id"] || @drug.classification_id
     @drug.image_url = params["image_url"] || @drug.image_url
     if @drug.save
       render :show
