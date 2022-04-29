@@ -44,7 +44,8 @@ POST http://localhost:3000/classifications.json
 Content-Type: application/json
 
 {
-  "name": "js test"
+  "name": "jb test",
+  "description": "jb description"
 }
 
 ### Classification Patch

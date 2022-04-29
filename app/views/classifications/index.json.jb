@@ -1,6 +1,7 @@
 @classifications.map do |classification|
   {
     id: classification.id,
-    name: classification.name
+    name: classification.name,
+    description: classification.description
   }
 end

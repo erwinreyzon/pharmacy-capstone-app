@@ -12,7 +12,8 @@ class ClassificationsController < ApplicationController
 
   def create
     @classification = Classification.new(
-      name: params["name"]
+      name: params["name"],
+      description: params["description"]
     )
     if @classification.save
       render :show
@@ -24,6 +25,7 @@ class ClassificationsController < ApplicationController
   def update
     @classification = Classification.find_by(id: params[:id])
     @classification.name = params["name"] || @classification.name
+    @classification.description = params["description"] || @classification.description
     if @classification.save
       render :show
     else
