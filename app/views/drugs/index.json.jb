@@ -3,7 +3,7 @@
     id: drug.id,
     name: drug.name,
     description: drug.description,
-    class_id: drug.class_id,
+    classification_id: drug.classification_id,
     image_url: drug.image_url
   }
 end
