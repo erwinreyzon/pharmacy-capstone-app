@@ -17,10 +17,11 @@ class DrugsController < ApplicationController
       class_id: params["class_id"],
       image_url: params["image_url"]
     )
+    @drug = drug
     if drug.save
-      render json: drug
+      render :show
     else
-      render json: {error: drug.error.full_messages}, status: 422
+      render json: {error: drug.errors.full_messages}, status: 422
     end
   end
 
@@ -33,7 +34,7 @@ class DrugsController < ApplicationController
     if drug.save
       render json: drug
     else
-      render json: {error: drug.error.full_messages}, status: 422
+      render json: {error: drug.errors.full_messages}, status: 422
     end
   end
 

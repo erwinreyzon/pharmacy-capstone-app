@@ -9,10 +9,10 @@ POST http://localhost:3000/drugs.json
 Content-Type: application/json
 
 {
-  "name": "create name test",
-  "description": "create description test",
-  "class_id": "create class_id test",
-  "image_url": "create image_url test"
+  "name": "create name jb test",
+  "description": "create description jb test",
+  "class_id": 1,
+  "image_url": "create image_url jb test"
 }
 
 ### Drug Patch

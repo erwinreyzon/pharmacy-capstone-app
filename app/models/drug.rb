@@ -1,3 +1,3 @@
 class Drug < ApplicationRecord
-  belongs_to :classification
+  # belongs_to :classification
 end
