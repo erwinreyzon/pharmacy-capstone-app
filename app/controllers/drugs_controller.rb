@@ -14,7 +14,7 @@ class DrugsController < ApplicationController
     @drug = Drug.new(
       name: params["name"],
       description: params["description"],
-      class_id: params["class_id"],
+      classification_id: params["classification_id"],
       image_url: params["image_url"]
     )
     if @drug.save
