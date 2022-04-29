@@ -49,9 +49,9 @@ Content-Type: application/json
 }
 
 ### Classification Patch
-PATCH http://localhost:3000/classifications/4.json
+PATCH http://localhost:3000/classifications/1.json
 Content-Type: application/json
 
 {
-  "name": "JB PATCH TEST"
+  "description": "TEST WORKED"
 }

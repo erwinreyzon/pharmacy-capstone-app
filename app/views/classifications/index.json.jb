@@ -2,6 +2,7 @@
   {
     id: classification.id,
     name: classification.name,
-    description: classification.description
+    description: classification.description,
+    drugs: classification.drugs
   }
 end
