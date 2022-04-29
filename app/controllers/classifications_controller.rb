@@ -6,8 +6,8 @@ class ClassificationsController < ApplicationController
   end
 
   def show
-    classification = Classification.find_by(id: params[:id])
-    render json: classification
+    @classification = Classification.find_by(id: params[:id])
+    render :show
   end
 
   def create
