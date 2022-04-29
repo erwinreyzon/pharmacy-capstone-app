@@ -1,3 +1,3 @@
 class Classification < ApplicationRecord
-  # has_many :drugs
+  has_many :drugs
 end
