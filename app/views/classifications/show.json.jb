@@ -1,0 +1,5 @@
+{
+  id: @classification.id,
+  created_at: @classification.created_at,
+  updated_at: @classification.updated_at
+}
