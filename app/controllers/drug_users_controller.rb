@@ -1,0 +1,2 @@
+class DrugUsersController < ApplicationController
+end
