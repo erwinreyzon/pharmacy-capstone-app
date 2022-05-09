@@ -95,7 +95,7 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "victoria@test.com",
+  "email": "erwin@test.com",
   "password": "password"
 }
 
@@ -116,3 +116,15 @@ Content-Type: application/json
 ### DrugUser index
 GET http://localhost:3000/drug_users.json
 Authorization: Bearer {{jwt}}
+
+### DrugUser create
+POST http://localhost:3000/drug_users.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "drug_id": 2,
+  "prescribed_md": "Steven",
+  "quantity": 100,
+  "directions": "Once daily"
+}

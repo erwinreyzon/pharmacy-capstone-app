@@ -15,6 +15,8 @@ class DrugUsersController < ApplicationController
       directions: params[:directions],
       status: true
     )
+    drug_user.save
+    render json: drug_user
   end
 
 end
