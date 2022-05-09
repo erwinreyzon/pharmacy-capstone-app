@@ -19,4 +19,13 @@ class DrugUsersController < ApplicationController
     render json: drug_user
   end
 
+  def update
+    drug_user = DrugUser.find_by(id: params[:id])
+      drug_user.prescribed_md = params[:prescribed_md] || drug_user.prescribed_md
+      drug_user.quantity = params[:quantity] || drug_user.quantity
+      drug_user.directions = params[:directions] || drug_user.directions
+    drug_user.save
+    render json: drug_user
+  end
+
 end

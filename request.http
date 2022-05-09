@@ -123,8 +123,17 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "drug_id": 2,
-  "prescribed_md": "Steven",
-  "quantity": 100,
-  "directions": "Once daily"
+  "drug_id": 1,
+  "prescribed_md": "Johnny",
+  "quantity": 500,
+  "directions": "5 daily"
+}
+
+### DrugUser update
+PATCH http://localhost:3000/drug_users/2.json
+Content-Type: application/json
+Authorization: Bearer {{jwt}}
+
+{
+  "directions": "twice daily"
 }
