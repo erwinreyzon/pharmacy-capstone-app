@@ -1,0 +1,2 @@
+class DrugUser < ApplicationRecord
+end
