@@ -1,8 +1,9 @@
 class DrugUsersController < ApplicationController
 
   def index
-    drug_user = DrugUser.all
-    render json: drug_user
+    pp current_user
+    drug_users = current_user.drug_users.where(status: true)
+    render json: drug_users
   end
 
   def create
