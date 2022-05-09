@@ -137,3 +137,7 @@ Authorization: Bearer {{jwt}}
 {
   "directions": "twice daily"
 }
+
+### DrugUser destroy
+DELETE http://localhost:3000/drug_users/3.json
+Authorization: Bearer {{jwt}}

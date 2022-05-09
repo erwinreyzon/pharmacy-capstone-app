@@ -28,4 +28,11 @@ class DrugUsersController < ApplicationController
     render json: drug_user
   end
 
+  def destroy
+    drug_user = DrugUser.find_by(id: params[:id])
+    drug_user.status = false
+    drug_user.save
+    render json: {status: "Medication removed from active list."}
+  end
+
 end

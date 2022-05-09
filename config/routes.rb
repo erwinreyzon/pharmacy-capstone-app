@@ -21,5 +21,6 @@ Rails.application.routes.draw do
   get "/drug_users" => "drug_users#index"
   post "/drug_users" => "drug_users#create"
   patch "/drug_users/:id" => "drug_users#update"
+  delete "/drug_users/:id" => "drug_users#destroy"
 
 end
