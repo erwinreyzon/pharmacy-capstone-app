@@ -2,7 +2,7 @@
   id: @drug.id,
   name: @drug.name,
   description: @drug.description,
-  classification_id: @drug.classification_id,
+  classification: @drug.classification.name,
   image_url: @drug.image_url,
   created_at: @drug.created_at,
   updated_at: @drug.updated_at
