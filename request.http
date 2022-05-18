@@ -123,10 +123,10 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "drug_id": 2,
-  "prescribed_md": "Johnny",
-  "quantity": 500,
-  "directions": "5 daily"
+  "drug_id": 5,
+  "prescribed_md": "Fred",
+  "quantity": 100,
+  "directions": "1 daily"
 }
 
 ### DrugUser update

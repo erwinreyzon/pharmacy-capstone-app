@@ -2,8 +2,8 @@ class DrugUsersController < ApplicationController
 
   def index
     pp current_user
-    drug_users = current_user.drug_users.where(status: true)
-    render json: drug_users
+    @drug_users = current_user.drug_users.where(status: true)
+    render :index
   end
 
   def create

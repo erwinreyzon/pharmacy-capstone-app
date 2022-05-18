@@ -1,6 +1,10 @@
 @drug_users.map do |drug_user|
   {
     id: drug_user.id,
-    url: drug_user_url(drug_user, format: :json)
+    drug: drug_user.drug.name,
+    prescribed_md: drug_user.prescribed_md,
+    quantity: drug_user.quantity,
+    directions: drug_user.directions,
+    updated_at: drug_user.updated_at
   }
 end
