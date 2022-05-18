@@ -1,0 +1,5 @@
+{
+  id: @drug_user.id,
+  created_at: @drug_user.created_at,
+  updated_at: @drug_user.updated_at
+}

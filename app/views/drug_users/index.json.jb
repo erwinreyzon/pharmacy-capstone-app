@@ -1,0 +1,6 @@
+@drug_users.map do |drug_user|
+  {
+    id: drug_user.id,
+    url: drug_user_url(drug_user, format: :json)
+  }
+end

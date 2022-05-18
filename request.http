@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTIyMDgwNDF9.FvM6krhGokSmApVUjbwgN1QDBzlPL_Trx77hciqaO5g
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTI5NzkxMzR9.s8avcWzAR0T2aiBy2U46QhMK8tvqKpJGA9mFh7Ljz_U
 
 ### Drug Index
 GET http://localhost:3000/drugs.json
@@ -123,7 +123,7 @@ Content-Type: application/json
 Authorization: Bearer {{jwt}}
 
 {
-  "drug_id": 1,
+  "drug_id": 2,
   "prescribed_md": "Johnny",
   "quantity": 500,
   "directions": "5 daily"
@@ -139,5 +139,5 @@ Authorization: Bearer {{jwt}}
 }
 
 ### DrugUser destroy
-DELETE http://localhost:3000/drug_users/3.json
+DELETE http://localhost:3000/drug_users/4.json
 Authorization: Bearer {{jwt}}
