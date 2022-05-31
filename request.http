@@ -18,15 +18,15 @@ Content-Type: application/json
 }
 
 ### Drug Patch
-PATCH http://localhost:3000/drugs/5.json
+PATCH http://localhost:3000/drugs/7.json
 Content-Type: application/json
 
 {
-  "class_id": 2
+  "image_url": "https://www.drugs.com/images/pills/nlm/675440670.jpg"
 }
 
 ### Drug Delete
-DELETE http://localhost:3000/drugs/3.json
+DELETE http://localhost:3000/drugs/6.json
   
 ### ### ### ### ### ### ### ### ### ### ###
 ###                                     ###
