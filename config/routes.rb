@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   # DrugUsers actions
   get "/drug_users" => "drug_users#index"
+  get "/drug_users/inactive" => "drug_users#inactive_index"
   get "/drug_users/:id" => "drug_users#show"
   post "/drug_users" => "drug_users#create"
   patch "/drug_users/:id" => "drug_users#update"

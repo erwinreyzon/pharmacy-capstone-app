@@ -6,6 +6,12 @@ class DrugUsersController < ApplicationController
     render :index
   end
 
+  def inactive_index
+    pp current_user
+    @drug_users = current_user.drug_users.where(status: false)
+    render :index
+  end
+
   def show
     @drug_user = DrugUser.find_by(id: params[:id])
     render :show
