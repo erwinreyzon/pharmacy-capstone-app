@@ -7,7 +7,7 @@ class DrugUsersController < ApplicationController
   end
 
   def show
-    @drug = Drug.find_by(id: params[:id])
+    @drug_user = DrugUser.find_by(id: params[:id])
     render :show
   end
 
