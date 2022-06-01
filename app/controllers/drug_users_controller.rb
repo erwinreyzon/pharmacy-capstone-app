@@ -6,6 +6,11 @@ class DrugUsersController < ApplicationController
     render :index
   end
 
+  def show
+    @drug = Drug.find_by(id: params[:id])
+    render :show
+  end
+
   def create
     drug_user = DrugUser.new(
       user_id: current_user.id,

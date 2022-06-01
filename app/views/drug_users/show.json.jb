@@ -1,5 +1,10 @@
 {
-  id: @drug_user.id,
   created_at: @drug_user.created_at,
+  id: @drug_user.id,
+  drug: @drug_user.drug.name,
+  drug_id: @drug_user.drug_id,
+  prescribed_md: @drug_user.prescribed_md,
+  quantity: @drug_user.quantity,
+  directions: @drug_user.directions,
   updated_at: @drug_user.updated_at
 }
