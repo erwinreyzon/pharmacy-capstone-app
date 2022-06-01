@@ -1,5 +1,4 @@
 {
-  created_at: @drug_user.created_at,
   id: @drug_user.id,
   drug: @drug_user.drug.name,
   drug_id: @drug_user.drug_id,
